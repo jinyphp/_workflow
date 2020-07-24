@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="/login" method="POST">
+        <div>
+            <label for="">이메일 : </label>
+            <input type="text" name="data[email]">
+            <p><?= $error['email']; ?></p>
+        </div>
+        <div>
+            <label for="">
+                패스워드 : 
+            </label>
+            <input type="password" name="data[password]">
+            <p><?= $error['password']; ?></p>
+        </div>
+        <div>
+            <button type="submit">로그인</button>
+        </div>        
+    </form>
+
+    <a href="/regist">회원가입</a> | <a href="/regist">비밀번호 찾기</a>  
+</body>
+</html>

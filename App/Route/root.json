@@ -1,0 +1,21 @@
+[
+    "\\App\\Controllers\\Home",
+    {
+        "regist":[
+            "\\App\\Controllers\\Members\\Agree",
+            {
+                "agree":"\\App\\Controllers\\Members\\Agree",
+                "form":"\\App\\Controllers\\Members\\Registration",
+                "password":"\\App\\Controllers\\Members\\Password"
+            }
+        ],
+        "login":"\\App\\Controllers\\Members\\Login",
+        "mypage":"\\App\\Controllers\\Members\\Mypage",
+        "logout":"\\App\\Controllers\\Members\\Logout",
+
+        "admin":{
+            "members":"\\App\\Controllers\\Members\\Members"
+        }
+        
+    }
+]

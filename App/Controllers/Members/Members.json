@@ -1,0 +1,24 @@
+{
+    "table":"members",
+    "list":{
+        "resource":"/resource/members.html",
+        "field": {
+            "id":"번호",
+            "first":"성",
+            "firstname":"성명",
+            "email":"이메일"
+        },
+        "href":{
+            "email":"/members/{id}"
+        }        
+    },
+    "view":{
+
+    },
+    "new":{
+
+    },
+    "edit":{
+
+    }
+}
