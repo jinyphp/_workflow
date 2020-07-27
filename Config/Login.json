@@ -1,0 +1,65 @@
+{
+    "login":{
+        "uri":"/login",
+        "resource":"../resource/login.html"
+    },
+    "logout":{
+        "uri":"/logout",
+        "resource":""
+    },
+    "mypage":{
+        "uri":"/mypage",
+        "resource":"../resource/mypage.html",
+        "edit": {
+            "resource":"../resource/mypage_edit.html"
+        }
+    },
+    "google":{
+        "client_id":"486127738112-i2ofsdqm25ctpnhl7a647vn9cpoiqdkd.apps.googleusercontent.com",
+        "secret":"2IY06uPlIL7uetPqr0VcE-gS",
+        "redirect":"http://localhost:8000/login/google",
+        "application":"jiny"
+    },
+    "facebook":{
+
+    },
+    "twitter":{
+
+    },
+    "naver":{
+        "client_id":"y5MjY9asnn3QnjdIRpp_",
+        "secret":"GKrSnO1fxm",
+        "redirectURI":"http://localhost:8000/login/naver"
+    },
+    "regist":{
+        "agree":{
+            "require":true,
+            "fields":[
+                "agree1",
+                "agree2"
+            ],
+            "resource":"../resource/members/agree.html",
+            "uri":"/regist/agree"
+        },
+        "forms":{
+            "uri":"/regist/form",
+            "resource":"../resource/regist.html",
+            "validate":[
+                {
+                    "name":"email",
+                    "require":true,
+                    "type":"email",
+                    "message":"정확한 이메일을 입력해 주세요"
+                },
+                {
+                    "name":"password",
+                    "require":true,
+                    "type":"password",
+                    "message":"정확한 패스워드를 입력해 주세요",
+                    "max": 8
+                }
+            ]
+        },
+        "uri":"/regist"
+    }
+}

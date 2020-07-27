@@ -7,7 +7,8 @@
 </head>
 <body>
     <h1>약관동의</h1>
-    <form action="/regist/agree" method="POST">
+    <form action="/regist/form" method="POST">
+        <input type="hidden" name="mode" value="new">
         <div>약관내용1</div>
         <input type="checkbox" name="data[agree1]" value="1" id="agree1"> <label for="agree1">동의 합니다.</label> 
         <br>

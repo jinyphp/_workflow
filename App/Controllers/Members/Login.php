@@ -6,13 +6,12 @@ class Login
 {
     private $db;
     private $Auth;
+    public $conf;
     public function __construct()
     {
         // 미들웨어
-        //$dbinfo = \jiny\dbinfo();
-        //$this->db = \jiny\mysql($dbinfo);
-
         $this->Auth = new \Jiny\Members\Auth($this);
+        $this->conf = \json_decode(\file_get_contents("../Config/Login.json"));
     }
 
     /**
@@ -49,6 +48,13 @@ class Login
         // GET 동작
         $file = "../resource/login.html";
         $body =  \jiny\html_get_contents($file, $vars);
+
+        // $Google = new \Jiny\Members\Google($this->conf);
+        // $body = str_replace("{{google-login}}",$Google->button(),$body);
+
+        // $Naver = new \Jiny\Members\Naver($this->conf);
+        // $body = str_replace("{{naver-login}}",$Naver->button(),$body);
+
         return $body;
     }
 

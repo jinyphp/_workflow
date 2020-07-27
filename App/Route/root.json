@@ -9,13 +9,20 @@
                 "password":"\\App\\Controllers\\Members\\Password"
             }
         ],
-        "login":"\\App\\Controllers\\Members\\Login",
+        "login":[
+            "\\App\\Controllers\\Members\\Login",
+            {
+                "google":"\\Jiny\\Members\\Google",
+                "naver":"\\Jiny\\Members\\Naver"
+            }
+        ],
+
         "mypage":"\\App\\Controllers\\Members\\Mypage",
         "logout":"\\App\\Controllers\\Members\\Logout",
 
         "admin":{
             "members":"\\App\\Controllers\\Members\\Members"
-        }
-        
+        },
+        "forms":"\\App\\Controllers\\Forms"
     }
 ]

@@ -1,0 +1,9 @@
+{
+    "main":{
+        "auth": true,
+        "resource":{
+            "status-login":"../resource/home.html",
+            "status-logout":"../resource/home_logout.html"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "name":"abcd",
+    "action":"/forms",
+    "method":"POST",
+    "fields":[
+        {
+            "type":"hidden",
+            "mode":"list"
+        },
+        {
+            "label":"이름",
+            "type":"text",
+            "name":"firstname",
+            "id":"first"
+        }
+    ],
+    "post":{
+        "vailation":[
+            
+        ]
+    }
+}

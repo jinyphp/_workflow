@@ -1,5 +1,8 @@
 <?php
 require "../vendor/autoload.php";
+// session_start();
+\jiny\session_start();
+
 
 $boot = \jiny\boot();
 
