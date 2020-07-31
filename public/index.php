@@ -1,5 +1,5 @@
 <?php
-require "../vendor/autoload.php";
+$autoload = require "../vendor/autoload.php";
 // session_start();
 \jiny\session_start();
 
