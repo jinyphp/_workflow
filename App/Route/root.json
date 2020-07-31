@@ -2,27 +2,34 @@
     "\\App\\Controllers\\Home",
     {
         "regist":[
-            "\\App\\Controllers\\Members\\Agree",
+            "\\Jiny\\Members\\Agree",
             {
-                "agree":"\\App\\Controllers\\Members\\Agree",
-                "form":"\\App\\Controllers\\Members\\Registration",
-                "password":"\\App\\Controllers\\Members\\Password"
+                "agree":"\\Jiny\\Members\\Agree",
+                "form":"\\Jiny\\Members\\Registration",
+                "password":"\\Jiny\\Members\\Password"
             }
         ],
         "login":[
-            "\\App\\Controllers\\Members\\Login",
+            "\\Jiny\\Members\\Login",
             {
                 "google":"\\Jiny\\Members\\Google",
-                "naver":"\\Jiny\\Members\\Naver"
+                "naver":"\\Jiny\\Members\\Naver",
+                "password":"\\Jiny\\Members\\Password",
+                "confirm":"\\Jiny\\Members\\Confirm"
             }
         ],
 
-        "mypage":"\\App\\Controllers\\Members\\Mypage",
-        "logout":"\\App\\Controllers\\Members\\Logout",
+        "mypage":"\\Jiny\\Members\\Mypage",
+        "logout":"\\Jiny\\Members\\Logout",
 
-        "admin":{
-            "members":"\\App\\Controllers\\Members\\Members"
-        },
+        "admin":[
+            "\\App\\Controllers\\Members\\Members",
+            {
+                "members":{
+                    "setting":"\\App\\Controllers\\Board\\Setting"
+                }
+            }            
+        ],
         "forms":"\\App\\Controllers\\Forms"
     }
 ]

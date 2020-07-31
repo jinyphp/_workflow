@@ -1,7 +1,7 @@
 {
     "login":{
         "uri":"/login",
-        "resource":"../resource/login.html"
+        "resource":"../resource/members/login.html"
     },
     "logout":{
         "uri":"/logout",
@@ -9,9 +9,9 @@
     },
     "mypage":{
         "uri":"/mypage",
-        "resource":"../resource/mypage.html",
+        "resource":"../resource/members/mypage.html",
         "edit": {
-            "resource":"../resource/mypage_edit.html"
+            "resource":"../resource/members/mypage_edit.html"
         }
     },
     "google":{
@@ -43,7 +43,7 @@
         },
         "forms":{
             "uri":"/regist/form",
-            "resource":"../resource/regist.html",
+            "resource":"../resource/members/regist.html",
             "validate":[
                 {
                     "name":"email",
@@ -61,5 +61,9 @@
             ]
         },
         "uri":"/regist"
+    },
+    "password":{
+        "uri":"/login/password",
+        "resource":"../resource/members/password.html"
     }
 }

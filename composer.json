@@ -7,10 +7,10 @@
         "jiny/petterns": "^0.0.1",
         "jiny/router": "^0.1.0",
         "jiny/html": "^0.0.5",
-        "jiny/board": "^0.2.0",
         "swiftmailer/swiftmailer": "^6.2",
         "google/apiclient": "^2.7",
-        "jiny/members": "^0.0.1"
+        "jiny/members": "^0.0.1",
+        "jiny/board": "^0.2.0"
     },
     "autoload": {
         "psr-4": {
