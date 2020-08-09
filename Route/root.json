@@ -1,0 +1,36 @@
+[
+    "\\App\\Controllers\\Home",
+    {
+        "regist":[
+            "\\App\\Controllers\\Login\\AgreeBrige",
+            {
+                "agree":"\\App\\Controllers\\Login\\AgreeBrige",
+                "form":"\\Jiny\\Members\\Registration",
+                "password":"\\Jiny\\Members\\Password"
+            }
+        ],
+        "login":[
+            "\\App\\Controllers\\Login\\LoginBrige",
+            {
+                "google":"\\Jiny\\Members\\Google",
+                "naver":"\\Jiny\\Members\\Naver",
+                "password":"\\Jiny\\Members\\Password",
+                "confirm":"\\Jiny\\Members\\Confirm"
+            }
+        ],
+
+        "mypage":"\\App\\Controllers\\Login\\MypageBrige",
+        "logout":"\\Jiny\\Members\\Logout",
+
+        "admin":[
+            "\\App\\Controllers\\Members\\MembersBrige",
+            {
+                "permit":"\\Jiny\\Members\\Admin\\Permit",
+                "members":{
+                    "setting":"\\App\\Controllers\\Board\\Setting"
+                }
+            }            
+        ],
+        "forms":"\\App\\Controllers\\Forms"
+    }
+]

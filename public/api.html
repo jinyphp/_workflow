@@ -9,5 +9,55 @@
 <body>
     <h1>API 테스트</h1>
     <div id="output"></div>
+    <form method="post" id="uploadForm">
+        <input type="text" name="user">
+        <input type="file" name="inpFile" id="upload">
+        <input type="submit" value="전송" >
+    </form>
+    <script>
+        const uploadForm = document.getElementById("uploadForm");
+        uploadForm.addEventListener("submit", hello);
+
+        function hello(e) {
+            e.preventDefault();
+            console.log("전송취소");
+            // console.log(new FormData(uploadForm));
+            console.log(uploadForm);
+            var formData = new FormData(uploadForm);
+            console.log(formData);
+            // var data = formData.serialize();
+            //console.log(data);
+
+            const xhr = new XMLHttpRequest(); 
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4) {
+
+                    if (xhr.status === 200) {
+                        // 200 : 통신성공
+                        // console.log(xhr.status+"작업내용 작성");
+                        // show("작업내용 작성");
+                        show(xhr.responseText);
+                    } else 
+                    if (xhr.status === 302) {
+                    }
+
+
+                    }
+            }
+
+            xhr.open("POST", "/", true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            let data = {
+                uri: "/admin"
+            }
+            
+            xhr.send(JSON.stringify(data));
+        }
+
+        
+
+
+    </script>
 </body>
 </html>

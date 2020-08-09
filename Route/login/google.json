@@ -1,0 +1,14 @@
+{
+    "uri":"/login/google",
+    "type":"form",
+    "auth":false,
+    "enable":true,
+    "controller":{
+        "name":"\\Jiny\\Members\\Google",
+        "method":"main"
+    },
+    "permit":{
+        
+    },
+    "description":"로그인폼"
+}

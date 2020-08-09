@@ -1,0 +1,20 @@
+{
+    "type":{
+        "table":{
+            "title":"테이블",
+            "description":"테이블의 데이터를 읽고 수정합니다."
+        },
+        "forms":{
+            "title":"폼입력",
+            "description":"테이터를 입력합니다."
+        },
+        "view":{
+            "title":"출력",
+            "description":"데이터의 내용을 출력합니다."
+        },
+        "page":{
+            "title":"페이지",
+            "description":"정적 페이지의 내용을 출력합니다."
+        }
+    }
+}

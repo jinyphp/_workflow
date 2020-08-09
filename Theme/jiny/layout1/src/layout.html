@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>layout01</title>
+    <style>
+        body {
+            background: #c8e6c9;
+        }
+        #wrap {
+            width: 1000px; 
+            height: 900px; 
+            margin: 0 auto; /* 중앙정렬 */
+
+            font-size: 40px; 
+            color: #fff; 
+            text-align: center; 
+            text-transform: uppercase; 
+        }
+        
+        
+        #side {
+            float: left; /* 블럭의 정렬상태 변경 */
+            width: 300px; 
+            height: 600px; 
+            line-height: 600px; 
+            background: #43a047;
+        }
+        #contents {
+            float: left; /* 블럭의 정렬상태 변경 */
+            width: 700px; 
+            height: 600px; 
+            line-height: 600px; 
+            background: #4caf50;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            {{header}}
+        </header>
+        <nav>
+            {{nav}}
+        </nav>
+        
+        <div id="side">side</div>
+        <div id="contents">contents</div>
+        <footer>
+            {{footer}}
+        </footer>
+        
+    </div>
+</body>
+</html>

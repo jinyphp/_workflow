@@ -1,0 +1,17 @@
+{
+    "uri":"/",
+    "type":"page",
+    "auth":false,
+    "enable":true,
+    "controller":{
+        "name":"\\App\\Controllers\\Home",
+        "method":"main"
+    },
+    "application/x-www-form-urlencoded":{
+
+    },
+    "permit":{
+        
+    },
+    "description":"메인root"
+}

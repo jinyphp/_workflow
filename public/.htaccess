@@ -1,13 +1,17 @@
-#리라이트 엔진을 활성화 합니다.
-RewriteEngine On
+<IfModule mod_rewrite.c>
+    #리라이트 엔진을 활성화 합니다.
+    RewriteEngine On
 
-# 상태와 디렉토리 링크
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-l
+    # 상태와 디렉토리 링크
+    # RewriteCond $1 !^(index\.php|resources|robots\.txt)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-l
 
-# 쿼리스트링
-RewriteRule ^ index.php [QSA,L]
+    # 쿼리스트링
+    RewriteRule ^ index.php [QSA,L]
+</IfModule>
+
 
 # 한글주소 지원
 <IfModule mod_url.c>
@@ -15,3 +19,9 @@ RewriteRule ^ index.php [QSA,L]
     ServerEncoding UTF-8
     ClientEncoding EUC-KR
 </IfModule>
+
+
+
+
+
+

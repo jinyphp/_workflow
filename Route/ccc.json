@@ -1,0 +1,14 @@
+{
+    "uri": "/admin/route",
+    "type": "table",
+    "auth": "1",
+    "enable": "1",
+    "controller": {
+        "name": "\\Jiny\\Router\\Admin\\Rule",
+        "method": "main"
+    },
+    "permit": {
+        "infohojin@naver.com": "crud"
+    },
+    "description": "관리자페이지,,, 라우트 설정123"
+}

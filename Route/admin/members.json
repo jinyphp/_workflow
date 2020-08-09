@@ -1,0 +1,18 @@
+{
+    "uri":"/admin/members",
+    "type":"filelist",
+    "auth":false,
+    "enable":true,
+    "controller":{
+        "name":"\\App\\Controllers\\Members\\MembersProxy",
+        "method":"main"
+    },
+    "api":{
+        "name":"\\Api\\Controllers\\Members\\MembersAPI",
+        "method":"main"
+    },
+    "permit":{
+        "infohojin@naver.com":"crud"
+    },
+    "description":"관리자페이지, HTML"
+}

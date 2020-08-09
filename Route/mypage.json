@@ -1,0 +1,14 @@
+{
+    "uri":"/login",
+    "type":"form",
+    "auth":false,
+    "enable":true,
+    "controller":{
+        "name":"\\App\\Controllers\\Login\\MypageBrige",
+        "method":"main"
+    },
+    "permit":{
+        
+    },
+    "description":"마이페이지"
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="asset/jquery-3.5.1.min.js"></script>
+    <script src="xhr.js"></script>
+</head>
+<body>
+    <h1>API 테스트</h1>
+    <div id="output"></div>
+    <form method="post" id="uploadForm">
+        <input type="text" name="user">
+        <input type="file" name="inpFile" id="upload">
+        <input type="submit" value="전송" >
+    </form>
+    <script>
+        const uploadForm = document.getElementById("uploadForm");
+        var formData = new Formdata($('#uploadForm')[0]);
+        uploadForm.addEventListener("submit", hello);
+        function hello(e) {
+            e.preventDefault();
+            $.ajax({
+                url: "/apitest.php",
+                data: formData,
+                success: function( result ) {
+                    console.log("success");
+                }
+            });
+        }
+
+        
+
+
+    </script>
+</body>
+</html>

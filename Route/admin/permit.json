@@ -1,0 +1,14 @@
+{
+    "uri":"/admin/permit",
+    "type":"filelist",
+    "auth":false,
+    "enable":true,
+    "controller":{
+        "name":"\\Jiny\\Members\\Admin\\Permit",
+        "method":"main"
+    },
+    "permit":{
+        "infohojin@naver.com":"crud"
+    },
+    "description":"관리자페이지, HTML"
+}

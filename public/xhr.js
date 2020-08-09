@@ -16,10 +16,9 @@ function xhr_ajax() {
 
             if (xhr.status === 200) {
                 // 200 : 통신성공
-        
-        
-                console.log("작업내용 작성");
+                console.log(xhr.status+"작업내용 작성");
                 show("작업내용 작성");
+                show(xhr.responseText);
             } else 
             // 302 : Moved Temporarily,요청한 리소스가 임시적으로 이동, 클라이언트가 리소스에 접근하기 위해 
             //       현재의 URI를 반환해야 함을 나타냄. 라이언트는 자동으로 GET또는 HEAD 요청을 리다이렉트 할것이다.
@@ -37,7 +36,7 @@ function xhr_ajax() {
     };
 
     // 세팅, post와 get방식 선택 / URL / true(비동기적), false(동기적)
-    xhr.open("POST", "/todo/TodoTypeServlet", true);
+    xhr.open("POST", "/apitest.php", true);
 
     // 서버로 전송할 데이터 타입의 형식(MIME)을 지정, POST방식에서만 사용, open다음에 사용해야함
     // xhr.setRequestHeader('Content-Type', "application/x-www-form-urlencoded"); - &으로 분리되고, 
@@ -56,4 +55,3 @@ function show(output)
     document.getElementById('output').innerHTML += '<p>'+output+'</p>';
 }
 
-xhr_ajax();

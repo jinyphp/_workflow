@@ -1,0 +1,14 @@
+{
+    "uri":"/regist/form",
+    "type":"page",
+    "auth":false,
+    "enable":true,
+    "controller":{
+        "name":"\\Jiny\\Members\\Registration",
+        "method":"main"
+    },
+    "permit":{
+        
+    },
+    "description":"메인root"
+}

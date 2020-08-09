@@ -1,0 +1,14 @@
+{
+    "uri":"/regist/agree",
+    "type":"page",
+    "auth":false,
+    "enable":true,
+    "controller":{
+        "name":"\\App\\Controllers\\Login\\AgreeBrige",
+        "method":"main"
+    },
+    "permit":{
+        
+    },
+    "description":"메인root"
+}

@@ -1,0 +1,14 @@
+{
+    "uri":"/login/naver",
+    "type":"form",
+    "auth":false,
+    "enable":true,
+    "controller":{
+        "name":"\\Jiny\\Members\\Naver",
+        "method":"main"
+    },
+    "permit":{
+        
+    },
+    "description":"로그인폼"
+}

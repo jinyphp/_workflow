@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "87e19674c74551f5b19368366831193f",
+    "content-hash": "86b1bb68ee6c31283cdf06a4215c4aac",
     "packages": [
         {
             "name": "doctrine/lexer",
@@ -545,6 +545,102 @@
             "time": "2019-07-01T23:21:34+00:00"
         },
         {
+            "name": "jiny/api",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jinyphp/api.git",
+                "reference": "94757256d6e876f39476f61168f6eebc71ea4937"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jinyphp/api/zipball/94757256d6e876f39476f61168f6eebc71ea4937",
+                "reference": "94757256d6e876f39476f61168f6eebc71ea4937",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jiny\\API\\": "src/"
+                },
+                "files": [
+                    "src/Helpers/Helper.php",
+                    "src/Helpers/Jiny.php",
+                    "src/Helpers/Api.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "hojinlee",
+                    "email": "infohojin@gmail.com",
+                    "homepage": "https://jiny.dev"
+                }
+            ],
+            "description": "jinyPHP Api",
+            "homepage": "https://jiny.dev",
+            "keywords": [
+                "api",
+                "framwork",
+                "jinyphp"
+            ],
+            "time": "2020-08-05T09:55:20+00:00"
+        },
+        {
+            "name": "jiny/app",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jinyphp/app.git",
+                "reference": "93790f2afff1d5c28fa733fc8e969218bf1dd372"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jinyphp/app/zipball/93790f2afff1d5c28fa733fc8e969218bf1dd372",
+                "reference": "93790f2afff1d5c28fa733fc8e969218bf1dd372",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jiny\\App\\": "src/"
+                },
+                "files": [
+                    "src/Helpers/Helper.php",
+                    "src/Helpers/Jiny.php",
+                    "src/Helpers/App.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "hojinlee",
+                    "email": "infohojin@gmail.com",
+                    "homepage": "https://jiny.dev"
+                }
+            ],
+            "description": "jinyPHP App",
+            "homepage": "https://jiny.dev",
+            "keywords": [
+                "application",
+                "framwork",
+                "jinyphp"
+            ],
+            "time": "2020-07-19T08:39:51+00:00"
+        },
+        {
             "name": "jiny/board",
             "version": "0.2.0",
             "source": {
@@ -633,6 +729,54 @@
                 "jinyphp"
             ],
             "time": "2019-04-09T12:17:41+00:00"
+        },
+        {
+            "name": "jiny/debug",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jinyphp/debug.git",
+                "reference": "4c510a797fd931f5bccd26a553194b51eabaafed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jinyphp/debug/zipball/4c510a797fd931f5bccd26a553194b51eabaafed",
+                "reference": "4c510a797fd931f5bccd26a553194b51eabaafed",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jiny\\Debug\\": "src/"
+                },
+                "files": [
+                    "src/Helpers/Helper.php",
+                    "src/Helpers/Jiny.php",
+                    "src/Helpers/Debug.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "hojinlee",
+                    "email": "infohojin@gmail.com",
+                    "homepage": "https://php.jiny.dev"
+                }
+            ],
+            "description": "jinyPHP debug",
+            "homepage": "https://php.jiny.dev",
+            "keywords": [
+                "debug",
+                "framwork",
+                "jinyphp"
+            ],
+            "time": "2020-08-02T08:45:53+00:00"
         },
         {
             "name": "jiny/html",
@@ -777,6 +921,52 @@
                 "members"
             ],
             "time": "2020-07-27T08:53:31+00:00"
+        },
+        {
+            "name": "jiny/menu",
+            "version": "0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jinyphp/menu.git",
+                "reference": "6104a56b4d682322f9453f5a984fed67414b08be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jinyphp/menu/zipball/6104a56b4d682322f9453f5a984fed67414b08be",
+                "reference": "6104a56b4d682322f9453f5a984fed67414b08be",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jiny\\Menu\\": "src/"
+                },
+                "files": [
+                    "src/Helper/Helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "hojinlee",
+                    "email": "infohojin@gmail.com",
+                    "homepage": "http://www.jinyphp.com"
+                }
+            ],
+            "description": "jinyPHP Framwork Menu",
+            "homepage": "http://www.jinyphp.com",
+            "keywords": [
+                "framwork",
+                "jinyphp",
+                "menu"
+            ],
+            "time": "2019-04-09T12:14:48+00:00"
         },
         {
             "name": "jiny/mysql",
@@ -963,6 +1153,52 @@
                 "session"
             ],
             "time": "2020-07-14T06:00:47+00:00"
+        },
+        {
+            "name": "jiny/theme",
+            "version": "0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jinyphp/theme.git",
+                "reference": "1e045504ba4bb02f8b5e4270c529888fcb7145be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jinyphp/theme/zipball/1e045504ba4bb02f8b5e4270c529888fcb7145be",
+                "reference": "1e045504ba4bb02f8b5e4270c529888fcb7145be",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jiny\\Theme\\": "src/"
+                },
+                "files": [
+                    "src/Helpers/Helper.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "hojinlee",
+                    "email": "infohojin@gmail.com",
+                    "homepage": "http://hojin.io"
+                }
+            ],
+            "description": "jinyPHP Framwork Theme",
+            "homepage": "http://jiny.hojin.io",
+            "keywords": [
+                "framwork",
+                "jinyphp",
+                "theme"
+            ],
+            "time": "2019-04-09T12:11:16+00:00"
         },
         {
             "name": "monolog/monolog",

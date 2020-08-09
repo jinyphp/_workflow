@@ -1,0 +1,14 @@
+{
+    "uri":"/admin/resource",
+    "type":"filelist",
+    "auth":false,
+    "enable":true,
+    "controller":{
+        "name":"\\Jiny\\Html\\Admin\\Resource",
+        "method":"main"
+    },
+    "permit":{
+        "infohojin@naver.com":"crud"
+    },
+    "description":"관리자페이지, HTML"
+}

@@ -1,45 +1,33 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <style>
+<div class="container-fluid">
+    <h1 class="mt-4"><?= $title ?></h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a href="/admin">Admin</a></li>
+        <li class="breadcrumb-item active">Members</li>
+    </ol>
+
+
+    <i class="fas fa-table mr-1"></i>
+    Total : <?= $total; ?>
+
+    <form action="/admin/members" method="POST">
+        <input type="hidden" name="field" value="<?= $field; ?>">
+        <input type="text" name="search" value="<?= $search; ?>">
+        <button type="submit">검색</button>
+    </form>
+
+    <!--리스트목록/Table Builder 헬퍼함수-->
+    <!--매개변수로, 부트스트랩 클래스 타입 전달-->
+    <!--  --> 
+    <?= \jiny\html\table\build(['class'=>"table table-bordered"]); ?>
     
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1><?= $title ?></h1>
-        <hr class="my-4">
-
-        전체 : <?= $total; ?>
-        <br>
-
-        <form action="/admin/members" method="POST">
-            <input type="hidden" name="field" value="<?= $field; ?>">
-            <input type="text" name="search" value="<?= $search; ?>">
-            <button type="submit">검색</button>
-        </form>
-    
-        <!--리스트목록/Table Builder 헬퍼함수-->
-        <!--매개변수로, 부트스트랩 클래스 타입 전달-->
-        <?= \jiny\html\table\build(['class'=>"table table-hover"]); ?>
-
-        <!--페이지네이션-->
-        <div >
-            <?= \jiny\board\pagenation\build(); ?>
-        </div>
-        
-
-        <div class="text-right">
-            <button onclick="javascript:board_new()" class="btn btn-primary">신규삽입</button>
-        </div>
+    <!--페이지네이션-->
+    <div >
+        <?= \jiny\board\pagenation\build(); ?>
     </div>
     
+    <div class="text-right">
+        <a href="/admin/members/new" class="btn btn-primary">신규삽입</a>
+        <button onclick="javascript:board_new()" class="btn btn-primary">신규삽입2</button>
+    </div>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    
-</body>
-</html>
+</div>

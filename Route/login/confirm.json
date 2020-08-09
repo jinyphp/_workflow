@@ -1,0 +1,14 @@
+{
+    "uri":"/login/confirm",
+    "type":"form",
+    "auth":false,
+    "enable":true,
+    "controller":{
+        "name":"\\Jiny\\Members\\Confirm",
+        "method":"main"
+    },
+    "permit":{
+        
+    },
+    "description":"로그인폼"
+}

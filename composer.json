@@ -10,7 +10,12 @@
         "swiftmailer/swiftmailer": "^6.2",
         "google/apiclient": "^2.7",
         "jiny/members": "^0.0.1",
-        "jiny/board": "^0.2.0"
+        "jiny/board": "^0.2.0",
+        "jiny/theme": "^0.1.1",
+        "jiny/debug": "^0.0.1",
+        "jiny/menu": "^0.1.1",
+        "jiny/app": "^0.0.1",
+        "jiny/api": "^0.1.0"
     },
     "autoload": {
         "psr-4": {
