@@ -1,28 +1,14 @@
+<div class="container">
+    <h1>회원정보</h1>
+    <hr class="my-4">
 
-    <div class="container">
-        <h1>회원정보</h1>
-        <hr class="my-4">
+    <?= \jiny\html\form\build(); ?>
 
-        <?= \jiny\html\form\build(); ?>
-
-        <a href="/admin/members" class="btn btn-primary">목록</a>
-        <br>
-        <a href="javascript:board_delete()" class="btn btn-danger">삭제</a>
-
+    <div class="text-right">
+        <button class="btn btn-primary" id="btn-board-listlink">목록이동</button>
+        <button class="btn btn-primary" id="btn-board-list">목록출력</button>
     </div>
-
-    <script>
-        function board_delete(){
-            const form = document.getElementsByTagName("form")[0];
-            form.mode.value = "delete";
-            form.submit();
-
-            /*
-            document.getElementsByTagName("form")[0].id.value = id;
-            document.getElementsByTagName("form")[0].mode.value = "edit";
-            document.getElementsByTagName("form")[0].action = document.location.href+"/"+id;
-            document.getElementsByTagName("form")[0].submit();
-            */
-        }
-    </script>
-    
+    <br>
+    <button class="btn btn-danger" id="btn-board-delete">DELETE 삭제</button>
+    <button class="btn btn-danger" id="btn-board-delete-post">POST 삭제</button>
+</div>

@@ -8,7 +8,7 @@
         "method":"main"
     },
     "api":{
-        "name":"\\Api\\Controllers\\Members\\MembersAPI",
+        "name":"\\Jiny\\Members\\Admin\\Members",
         "method":"main"
     },
     "permit":{

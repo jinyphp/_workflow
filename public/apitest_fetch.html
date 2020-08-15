@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="xhr.js"></script>
+</head>
+<body>
+    <h1>API 테스트</h1>
+    <div id="output"></div>
+    <form method="post" id="uploadForm" enctype="multipart/form-data">
+        <input type="text" name="user">
+        <input type="text" name="data[user]">
+        <input type="text" name="data[password]">
+        <input type="file" name="inpFile" id="upload">
+        <input type="submit" value="전송" >
+    </form>
+    <script>
+
+        const form = document.querySelector("form");
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            console.log(this);
+            const formdata = new FormData(this);
+            console.log(formdata);
+
+            const searchParams = new URLSearchParams();
+            
+            var object = {};
+            formdata.forEach(function (value, key) {
+                console.log(key, value);
+                object[key] = value;
+            });
+
+            console.log(object);
+            console.log(JSON.stringify(object));
+
+            /*
+            for (const pair of formdata) {
+                console.log(pair[0] , pair[1]);
+                searchParams.append(pair[0],pair[1]);
+            }
+            console.log(searchParams);
+            */
+            
+
+            /*
+            fetch("apitest.php", {
+                method: 'post',
+                body: searchParams
+            }).then(function(response) {
+                // Code ...
+                return response.text();
+                console.log();
+            }).then( function (text) {
+                console.log(text);
+            }).catch(function(error) {
+                // Error
+                console.log(error);
+            });
+            */
+
+
+        });
+        
+        
+    </script>
+</body>
+</html>

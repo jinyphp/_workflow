@@ -1,0 +1,60 @@
+<style>
+    .lnb {
+        height: 100vh;
+        overflow-y: scroll;
+    }
+
+    .lnb a {
+        text-decoration: none;
+        color: #ccc;
+    }
+
+    .lnb a:hover {
+        color: #fff;
+    }
+
+    .lnb ul {
+        list-style: none;
+        margin-left: 5px;
+        padding: 0px;
+    }
+
+    .lnb li {
+        padding: 10px;
+    }
+
+    .lnb::-webkit-scrollbar {
+        width: 6px;
+    }
+    .lnb::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    .lnb::-webkit-scrollbar-thumb {
+        border-radius: 3px;
+        background-color: gray;
+    }
+    .lnb::-webkit-scrollbar-button {
+        width: 0;
+        height: 0;
+    }
+</style>
+<div class="lnb bg-secondary">
+    <ul>
+        <li>
+            <a href="#lnb-menu1" data-toggle="collapse">회원관리</a>
+            <ul id="lnb-menu1" class="collapse">
+                <li>
+                    <a href="/admin/members">등록회원</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#lnb-menu2" data-toggle="collapse">menu2</a>
+            <ul id="lnb-menu2" class="collapse">
+                <li>
+                    menu2-1
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>

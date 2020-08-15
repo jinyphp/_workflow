@@ -4,6 +4,7 @@
         "title":"회원관리",
         "href":"/admin/members",
         "controller":"",
+        
         "permit":{
             "enable":true,
             "title":"권환관리",
