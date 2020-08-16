@@ -10,18 +10,13 @@ class MembersProxy extends \Jiny\App\Controller
     public function __construct()
     {
         $this->Members = new \Jiny\Members\Admin\Members($this);
-        $this->conf($this->Members->confpath);
-        $this->Members->setConf($this->conf);
-
-        // 게시판 쿠키초기화
-        $this->Members->init();
+        $conf = $this->Members->confPath(); // 패키지 기본설정
+        $this->Members->init()->setEnv($conf);
     }
 
     public function main($params=[])
     {
-        $method = \jiny\http\request()->method();
         $body = $this->Members->main($params);
-        
         return $this->output($body);
     }
 
