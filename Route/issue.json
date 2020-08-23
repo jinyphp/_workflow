@@ -1,0 +1,10 @@
+{
+    "uri":"/issue",
+    "enable":true,
+    "auth":true,
+    "action":{
+        "type":"table",
+        "conf":"../App/Controllers/Task.json"
+    },
+    "description":"테스크"
+}

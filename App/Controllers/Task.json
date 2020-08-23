@@ -1,0 +1,161 @@
+{
+    "table":"task",
+    "uri":"/task",
+    "list":{
+        "title":"Task 목록",
+        "fields": {
+            "id":{
+                "title":"번호",
+                "attr":{
+                    "style":"width:10%;"
+                },
+                "href":[
+                    "script",
+                    "javascript:btnBoardEdit({id})"
+                ]
+            },          
+            "title":{
+                "title":"작업명",
+                "href":[
+                    "script",
+                    "javascript:btnBoardView({id})"
+                ]
+            }
+        }  
+    },
+    "view":{
+        "title":"Task 보기",
+        "fields": {
+            "id":{
+                "label":"번호"
+            },
+            "title":{
+                "label":"작업명"
+            }
+        }
+
+    },
+
+    "new":{
+        "title":"신규 테스크 작성",
+        "fields":{
+            "title":{
+                "group1":"<div class='form-group row'>",
+                "label" : {
+                    "title":"제목",
+                    "class":"col-sm-2 col-form-label"
+                },
+                "aaa":"<div class='col-sm-10'>",
+                "_input": {
+                    "type":"text",
+                    "name":"title", 
+                    "placeholder":"제목을 입력해 주세요",
+                    "required":"",
+                    "title":"제목",
+
+                    "class":"form-control"
+                },
+                "bbb":"</div>",
+                "group2":"</div>"
+            },
+            "content":{
+                "group1":"<div class='form-group row'>",
+                "label" : {
+                    "title":"내용",
+                    "class":"col-sm-2 col-form-label"
+                },
+                "aaa":"<div class='col-sm-10'>",
+                "_text": {
+                    "type":"textarea",
+                    "name":"content", 
+                    "placeholder":"내용을 입력해 주세요",
+                    "required":"",
+                    "title":"내용",
+
+                    "class":"form-control"
+                },
+                "bbb":"</div>",
+                "group2":"</div>"
+            },
+            "submit":{
+
+                "aaa":"<div class='text-right'>",
+                "button2":{
+                    "type":"button",
+                    "title":"작성",
+                    "class":"btn btn-primary",
+                    "id":"btn-board-submit"
+                },
+                "ccc":"</div>"
+            }
+        }
+    },
+
+    "edit":{
+        "title":"테스크 수정",
+        "fields":{
+            "title":{
+                "label" : {
+                    "title":"타이틀"
+                },               
+                "input": {
+                    "type":"text",
+                    "name":"title", 
+                    "placeholder":"제목을 입력해 주세요",
+                    "required":"",
+                    "title":"타이틀",
+                    "class":"form-control"
+                }
+            },
+
+            "task-select":{
+                "label" : {
+                    "title":"작업유형"
+                },             
+                "_select": {
+                    "type":"select",
+                    "name":"task",
+                    "option": {
+                        "1":"신규작업",
+                        "2":"수정작업"
+                    },
+                    "class":"form-control"
+                }
+         
+            },
+
+            "task-content":{
+                "label" : {
+                    "title":"내용"
+                },             
+                "_text": {
+                    "type":"textarea",
+                    "name":"content", 
+                    "placeholder":"내용을 입력해 주세요",
+                    "required":"",
+                    "title":"내용",
+                    "rows":"10",
+                    "class":"form-control"
+                }
+         
+            },
+            
+            "submit":{
+                "aaa":"<div class='form-row'><div class='col-2'>",
+                "button1" : {
+                    "type":"button",
+                    "title":"PUT 수정",
+                    "class":"btn btn-primary",
+                    "id":"btn-board-submit-put"
+                },
+                "bbb":"</div><div class='col-2'>",
+               
+                "ccc":"</div></div>"
+            }
+
+        }
+    },
+    "delete":{
+
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "uri":"/task",
+    "enable":true,
+    "auth":true,
+    "type":"table",
+    "controller":{
+        "name":"\\App\\Controllers\\Task",
+        "method":"main"
+    },
+    "api":{
+        "name":"\\App\\Controllers\\Task",
+        "method":"main"
+    },
+    "description":"테스크"
+}

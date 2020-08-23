@@ -1,0 +1,122 @@
+<style>
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+
+/* 기본값으로 모든 템을 숨김 */
+.form-tab {
+  display: none;
+}
+
+/* 인디케이터 디자인
+Make circles that indicate the steps of the form: */
+.indicator .step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5; /* 미작성시 0.5*/
+}
+
+/* 작성된 텝, 인디케이터
+Mark the active step: */
+.indicator .step.active {
+  opacity: 1; /* 작성텝 일경우 1*/
+}
+
+/* Mark the steps that are finished and valid: */
+.indicator .step.finish {
+  background-color: #4CAF50;
+}
+</style>
+<style>
+    .agree {
+        width:100%; height:100px;
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+        overflow-y: scroll; /* Add vertical scrollbar */
+    }
+</style>
+
+<div class="jumbotron jumbotron-fluid">
+	<div class="container">
+		<h1 class="display-4">WorkBoard</h1>
+    <p class="lead">자유로운 업무형 웹보드 구축 시스템.</p>
+	</div>
+</div>
+
+<div class="container">
+    <div id="jiny-main">
+        <form id="regForm" method="POST">
+            <input type="hidden" name="mode" value="newup">
+            
+            <!-- One "tab" for each step in the form: -->
+            <div class="form-tab">
+                <h1>회원 가입동의</h1>
+                <hr class="my-4">
+                <h2>약관동의1</h2>
+                <div class="agree">
+                    약관내용1
+                    qdfasdfjlkadfklajdsflkjadslf
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" name="data[agree1]" value="1" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        동의합니다.
+                    </label>
+                </div>
+                <br>
+                <h2>약관동의2</h2>
+                <div class="agree">
+                    약관내용2
+                    kldfjlaksdflaksdfkla
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" name="data[agree2]" value="2" id="defaultCheck2">
+                    <label class="form-check-label" for="defaultCheck2">
+                        동의합니다.
+                    </label>
+                </div>
+            </div>
+            
+            <div class="form-tab">
+                <h1>회원정보</h1>
+                <hr class="my-4">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" name="data[email]" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" name="data[password]" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+            </div>
+            
+    
+            <div class="row mt-5">
+                <div class="col">
+                    <!-- Circles which indicates the steps of the form: -->
+                    <div class="indicator">
+                    </div>
+                </div>
+                <div class="col">
+                    <div style="overflow:auto;">
+                        <div style="float:right;">
+                          <button type="button" class="btn btn-secondary" id="prevBtn">Previous</button>
+                          <button type="button" class="btn btn-primary" id="nextBtn">Next</button>
+                        </div>
+                      </div>
+                </div>
+            </div>        
+            
+        </form>
+
+    </div>
+</div>

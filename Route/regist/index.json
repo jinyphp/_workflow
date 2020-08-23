@@ -3,12 +3,10 @@
     "type":"page",
     "auth":false,
     "enable":true,
+
     "controller":{
-        "name":"\\App\\Controllers\\Login\\AgreeBrige",
+        "name":"\\App\\Controllers\\Registration",
         "method":"main"
-    },
-    "permit":{
-        
     },
     "description":"메인root"
 }

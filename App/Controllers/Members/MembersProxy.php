@@ -11,17 +11,18 @@ class MembersProxy extends \Jiny\App\Controller
     {
         $this->Members = new \Jiny\Members\Admin\Members($this);
         $conf = $this->Members->confPath(); // 패키지 기본설정
-        $this->Members->init()->setEnv($conf);
+        $this->Members->init($conf);
     }
 
     public function main($params=[])
     {
         $body = $this->Members->main($params);
-        return $this->output($body);
+        return $body;
+        // return $this->output($body);
     }
 
 
-
+    /*
     private function output($body)
     {
         // 테마출력
@@ -39,6 +40,7 @@ class MembersProxy extends \Jiny\App\Controller
             'header' => $Theme->resource("header.html"),
         ]);
     }
+    */
 
 
 }

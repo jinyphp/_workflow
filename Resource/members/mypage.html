@@ -1,25 +1,25 @@
 <div class="container-fluid">
     <h1 class="mt-4">mypage</h1>
-    <ol class="breadcrumb mb-4">
-        <li class="breadcrumb-item active">Dashboard</li>
-    </ol>
+    <hr>
     <a href="<?= \jiny\members\logout\uri(); ?>">로그아웃</a>
     <div class="row">
-        <ul>
-            <li>인증방식 : <?= $authway; ?></li>
-        </ul>
-    
-        <ul>
-            <li>이메일 : <?= $info['email']; ?></li>
-            <li>이름 : <?= $info['firstname']; ?></li>
-            <li>가입일자 : <?= $info['created_at']; ?></li>
-        </ul>
-    
-        <form action="/mypage" method="POST">
-            <input type="hidden" name="csrf" value="<?= $csrf; ?>">
-            <input type="hidden" name="mode" value="<?= $mode; ?>">
-    
-            <?= \jiny\html\bootstrap()->submitButtonPrimary("수정"); ?>
-        </form>
+        <div class="col">
+            <ul>
+                <li>인증방식 : <?= $authway; ?></li>
+            </ul>
+        
+            <ul>
+                <li>이메일 : <?= $info['email']; ?></li>
+                <li>이름 : <?= $info['firstname']; ?></li>
+                <li>가입일자 : <?= $info['created_at']; ?></li>
+            </ul>
+        
+            <form action="/mypage" method="POST">
+                <input type="hidden" name="csrf" value="<?= $csrf; ?>">
+                <input type="hidden" name="mode" value="<?= $mode; ?>">
+                <?= \jiny\html\bootstrap()->submitButtonPrimary("수정"); ?>
+            </form>
+        </div>
+        
     </div>
 </div>

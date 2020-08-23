@@ -18,19 +18,25 @@ class MypageBrige extends \Jiny\Members\Mypage
         // 상위기능
         $body = parent::main();
 
-        // 기능추가
+        return $this->output($body);
+    }
+
+    private function output($body)
+    {
         // 테마출력
-        //$name = "jindalrae/admin";
-        $name = $this->site->theme; 
+        // $name = "startbootstrap/sbadmin";
+        $name = "jiny/layout30";
         $Theme = \jiny\theme()->setName($name)->setPath();
-        $Theme->layout()->load(['title'=>"진달래꽃"]);
-        $header = $Theme->header()->load(['logo'=>"진달래꽃"]);
-        $footer = $Theme->footer()->load();
+        $Theme->layout("index.html")->load(['title'=>"진달래꽃",'logo'=>"Jindalrae"]);
+
+        $Menu = \jiny\menu()->json();
+        $m = $Menu->html()->ul();
+
         return \jiny\theme([
             'content'=>$body,
-            'header'=>$header,
-            'nav'=>"",
-            'footer'=>$footer
+            'sidebar' => $Theme->resource("accordion.html"),
+            'header' => $Theme->resource("header.html"),
         ]);
     }
+
 }

@@ -1,18 +1,20 @@
+<div class="container-fluid">
+    <h1 class="mt-4">회원정보 수정</h1>
+    <hr>
 
-    <div class="container">
-        <h1>회원정보 수정</h1>
-        <hr class="my-4">
+    <form action="/mypage" method="POST">
+        <input type="hidden" name="csrf" value="<?= $csrf; ?>">
+        <input type="hidden" name="mode" value="<?= $mode; ?>">
+        <label>이메일 :</label><input type="text" name="data[email]" value="<?= $data['email']; ?>" readonly>
+        <br>
+        <label>패스워드 :</label><input type="password" name="data[password]">
+        <br>
+        <label>이름 :</label><input type="text" name="data[firstname]" value="<?= $data['firstname']; ?>" >
+        <br>
+        
+        <?= \jiny\html\bootstrap()->submitButtonPrimary("수정"); ?>
+    </form>
 
-        <form action="/mypage" method="POST">
-            <input type="hidden" name="csrf" value="<?= $csrf; ?>">
-            <input type="hidden" name="mode" value="<?= $mode; ?>">
-            <label>이메일 :</label><input type="text" name="data[email]" value="<?= $data['email']; ?>" readonly>
-            <label>패스워드 :</label><input type="password" name="data[password]">
+ 
+</div>
     
-            <label>이름 :</label><input type="text" name="data[firstname]" value="<?= $data['firstname']; ?>" >
-    
-            
-            <?= \jiny\html\bootstrap()->submitButtonPrimary("수정"); ?>
-        </form>
-
-    </div>

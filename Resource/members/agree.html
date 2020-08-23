@@ -1,13 +1,15 @@
-<h1>회원동의</h1>
-<hr class="my-4">
+<div class="container">
+    <h1>회원동의</h1>
+    <hr class="my-4">
 
-<form action="/regist/form" method="POST">
-    <input type="hidden" name="mode" value="new">
-    <div>약관내용1</div>
-    <input type="checkbox" name="data[agree1]" value="1" id="agree1"> <label for="agree1">동의 합니다.</label> 
-    <br>
-    <div>약관내용2</div>
-    <input type="checkbox" name="data[agree2]" value="2" id="agree2"> <label for="agree2">동의 합니다.</label> 
-    <br>
-    <button type="submit">동의</button>
-</form>
+    <form action="/regist/form" method="POST">
+        <input type="hidden" name="mode" value="new">
+        <div>약관내용1</div>
+        <input type="checkbox" name="data[agree1]" value="1" id="agree1"> <label for="agree1">동의 합니다.</label> 
+        <br>
+        <div>약관내용2</div>
+        <input type="checkbox" name="data[agree2]" value="2" id="agree2"> <label for="agree2">동의 합니다.</label> 
+        <br>
+        <button type="submit">동의</button>
+    </form>
+</div>

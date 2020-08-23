@@ -2,7 +2,7 @@
     <h1 class="mt-4"><?= $title ?></h1>
     <hr>
 
-    <div class="row mb-2">
+    <div class="row">
         <div class="col">
             <i class="fas fa-table mr-1"></i>
             Total : <?= $total; ?>
@@ -24,11 +24,13 @@
     
     <!--리스트목록/Table Builder 헬퍼함수-->
     <!--매개변수로, 부트스트랩 클래스 타입 전달-->
-    <!--  --> 
-    <div id="board-list">
-        <?= \jiny\html\table\build(['class'=>"table table-bordered"]); ?>
-        <!--페이지네이션-->
-        <?= \jiny\board\pagenation\build(); ?>
+    <!--  -->
+    <div class="row">
+        <div class="col" id="board-list">
+            <?= \jiny\html\table\build(['class'=>"table table-bordered"]); ?>    
+            <!--페이지네이션-->
+            <?= \jiny\board\pagenation\build(); ?>
+        </div>
     </div>
     
     <div class="text-right">
